@@ -1,118 +1,485 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUILDBORA CONSTRUCTION</title>
+
+<title>BUILDBORA CONSTRUCTION | Building Your Vision</title>
+
+<meta name="description" content="BUILDBORA CONSTRUCTION provides construction planning, project management and building solutions in Nairobi, Kenya.">
+
 <style>
-* { box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
+    font-family: Arial, sans-serif;
+    color: #252525;
+    line-height: 1.6;
+    background: #ffffff;
 }
+
 header {
-  background: #142b25;
-  color: white;
-  padding: 25px;
-  text-align: center;
+    background: #142b25;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #e5a43b;
+}
+
 nav {
-  background: #d69b36;
-  padding: 15px;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
 }
+
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
+
+nav a:hover {
+    color: #e5a43b;
+}
+
 .hero {
-  background: #263d35;
-  color: white;
-  text-align: center;
-  padding: 90px 20px;
+    min-height: 480px;
+    background: linear-gradient(
+        rgba(10, 30, 25, 0.82),
+        rgba(10, 30, 25, 0.82)
+    ),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600');
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
 }
-.hero h1 { font-size: 38px; }
-.hero p { font-size: 18px; }
+
+.hero h1 {
+    font-size: 43px;
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e5a43b;
+    color: #142b25;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #ffffff;
+}
+
 section {
-  padding: 40px 20px;
-  text-align: center;
+    padding: 65px 7%;
+    text-align: center;
 }
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+
+.section-title {
+    font-size: 30px;
+    color: #142b25;
+    margin-bottom: 15px;
 }
-.service {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  width: 280px;
+
+.section-description {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #666;
 }
+
+.about {
+    background: #f5f6f4;
+}
+
+.services-grid,
+.projects-grid,
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.service-card,
+.project-card,
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+}
+
+.service-card h3,
+.project-card h3,
+.feature-card h3 {
+    color: #142b25;
+    margin-bottom: 12px;
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.why-us {
+    background: #142b25;
+    color: white;
+}
+
+.why-us .section-title {
+    color: #e5a43b;
+}
+
+.feature-card {
+    background: #203b32;
+    color: white;
+}
+
+.feature-card h3 {
+    color: #e5a43b;
+}
+
+.project-card {
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.project-card div {
+    padding: 18px;
+}
+
+.contact {
+    background: #f5f6f4;
+}
+
+.contact-buttons {
+    max-width: 420px;
+    margin: 25px auto;
+}
+
+.contact-btn {
+    display: block;
+    color: white;
+    padding: 15px;
+    margin: 13px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.call {
+    background: #142b25;
+}
+
+.email {
+    background: #d69b36;
+    color: #142b25;
+}
+
 footer {
-  background: #142b25;
-  color: white;
-  padding: 25px;
-  text-align: center;
+    background: #10231e;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    margin: 6px;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>BUILDBORA CONSTRUCTION</h1>
-<p>Building Your Vision, Creating Your Future.</p>
+    <div class="logo">BUILDBORA</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
+<!-- HOMEPAGE -->
 
 <div class="hero" id="home">
-<h1>Building Kenya's Future</h1>
-<p>Quality Construction. Professional Solutions. Lasting Results.</p>
+    <h1>Building Your Vision, Creating Your Future.</h1>
+
+    <p>
+        Quality Construction. Professional Solutions.
+        Lasting Results.
+    </p>
+
+    <a href="#services" class="btn">Explore Our Services</a>
+
+    <a href="https://wa.me/254798685815"
+       class="btn">Contact Us</a>
 </div>
 
-<section id="about">
-<h2>About BUILDBORA</h2>
-<p>We are building a brand focused on quality construction,
-innovation and reliable building solutions.</p>
+<!-- ABOUT -->
+
+<section class="about" id="about">
+    <h2 class="section-title">About BUILDBORA</h2>
+
+    <p class="section-description">
+        BUILDBORA CONSTRUCTION is a developing construction
+        brand based in Nairobi, Kenya, focused on building
+        solutions, project planning and construction management.
+
+        Our vision is to deliver reliable, quality-focused
+        construction services while building lasting relationships
+        with our clients.
+    </p>
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="service">
-<h3>Building Construction</h3>
-<p>Professional building solutions for residential and commercial projects.</p>
-</div>
-<div class="service">
-<h3>Project Management</h3>
-<p>Organised planning and management of construction projects.</p>
-</div>
-<div class="service">
-<h3>Design & Planning</h3>
-<p>Creative building concepts and project planning solutions.</p>
-</div>
-</div>
+    <h2 class="section-title">Our Services</h2>
+
+    <p class="section-description">
+        Explore the construction and project solutions
+        offered by BUILDBORA.
+    </p>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">🏗️</div>
+            <h3>Building Construction</h3>
+            <p>
+                Building solutions for residential and
+                commercial developments.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📋</div>
+            <h3>Project Management</h3>
+            <p>
+                Construction planning, coordination and
+                project management solutions.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📐</div>
+            <h3>Design & Planning</h3>
+            <p>
+                Building concepts, design coordination
+                and project planning.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Property Development</h3>
+            <p>
+                Construction and development planning
+                for property projects.
+            </p>
+        </div>
+
+    </div>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<p>Interested in working with us? Get in touch.</p>
-<p>Email: Your email coming soon</p>
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+    <h2 class="section-title">Why Choose BUILDBORA?</h2>
+
+    <p class="section-description" style="color:white;">
+        Our goal is to build trust through professionalism,
+        planning and commitment to quality.
+    </p>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <h3>Quality Focus</h3>
+            <p>We value quality and attention to detail.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Professional Approach</h3>
+            <p>We believe in proper planning and coordination.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Client Satisfaction</h3>
+            <p>We aim to understand and meet client expectations.</p>
+        </div>
+
+    </div>
 </section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    <h2 class="section-title">Our Projects</h2>
+
+    <p class="section-description">
+        A showcase of construction inspiration and
+        building concepts.
+    </p>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800"
+                 alt="Modern commercial building">
+            <div>
+                <h3>Commercial Buildings</h3>
+                <p>Modern commercial building concepts.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+                 alt="Modern residential house">
+            <div>
+                <h3>Residential Buildings</h3>
+                <p>Contemporary residential design inspiration.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800"
+                 alt="Construction site">
+            <div>
+                <h3>Construction Projects</h3>
+                <p>Building and construction project inspiration.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <p style="margin-top:20px;color:#777;font-size:13px;">
+        Note: These are illustrative images, not verified
+        BUILDBORA completed projects.
+    </p>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <p class="section-description">
+        Have a construction project in mind?
+        Get in touch with BUILDBORA CONSTRUCTION today.
+    </p>
+
+    <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+    <p><strong>Phone:</strong> +254 798 685 815</p>
+
+    <p><strong>Email:</strong>
+        dansonmchemi6@gmail.com
+    </p>
+
+    <div class="contact-buttons">
+
+        <a class="contact-btn whatsapp"
+           href="https://wa.me/254798685815">
+           Chat With Us on WhatsApp
+        </a>
+
+        <a class="contact-btn call"
+           href="tel:+254798685815">
+           Call BUILDBORA
+        </a>
+
+        <a class="contact-btn email"
+           href="mailto:dansonmchemi6@gmail.com">
+           Send Us an Email
+        </a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
 
 <footer>
-<p>© 2026 BUILDBORA CONSTRUCTION. All Rights Reserved.</p>
+    <h2>BUILDBORA CONSTRUCTION</h2>
+
+    <p>Building Your Vision, Creating Your Future.</p>
+
+    <p>Nairobi, Kenya</p>
+
+    <p>© 2026 BUILDBORA CONSTRUCTION.
+       All Rights Reserved.</p>
 </footer>
 
 </body>
-</html>
+      </html>
+      
